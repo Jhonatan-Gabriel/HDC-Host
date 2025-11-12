@@ -13,3 +13,58 @@ h1, h2, h3 {
 p {
     color: #70747a;
 }
+
+/* navbar */
+.navbar-container {
+  width: 100%; /* A barra ocupa 100% da largura da tela. */           
+  height: 80px;           
+  background-color: #232a31;
+  padding: 0 2rem; /* Adiciona um espaço interno*/   
+   /* 0 nas partes de cima e de baixo.*/
+   /* 2rem (geralmente 32px) nas laterais esquerda e direita, para o conteúdo não colar nas bordas da tela. */                          
+}
+
+nav {
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta em relação a este elemento pai. */
+}
+
+.logo {
+  width: 50px; 
+  margin-top: 15px; 
+}
+
+.navbar-items {
+  position: absolute; /*Faz com que o elemento filho respeite os limites do elemento pai(nav)*/
+  right: 0; /*Alinha os items à direita da página*/
+  height: 80px;
+  line-height: 80px; /*Alinha verticalmente os items pois é a mesma altura em height*/
+  margin: 0;
+  display: inline-block; /*a lista se comporta como um bloco, porém, fluindo em linha*/
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.navbar-items a {
+    color: #fff;
+    text-decoration: none; /*remover sublinhado dos links*/
+    transition: 0.5s; /*qualquer efeito levará 0.5s, tornando uma transição mais suave.*/
+}
+
+.navbar-items a:hover {
+    color: #ccc; /*cor ao passar o mouse*/
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px; /*arredonda os cantos do botão*/
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #22bb5f;
+    color: #fff; /*garante que o texto continue branco ao passar o mouse*/
+}
