@@ -68,3 +68,26 @@ nav {
     background-color: #22bb5f;
     color: #fff; /*garante que o texto continue branco ao passar o mouse*/
 }
+
+/* main banner */
+.main-banner {
+    background-image: url("../img/mainbanner.png"); /*Define qual será a imagem de fundo do banner*/
+    background-size: cover; /*faz com que a imagem de fundo cubra todo o espaço do banner*/
+    background-position: center; /*centraliza a imagem de fundo*/
+    padding: 10rem 0; /*espaçamento interno de 10rem (160px) nas partes de cima e de baixo, e 0 nas laterais*/
+}
+
+.main-banner h1, .main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 6px 4px 2px; /*adiciona sombra ao texto para melhorar a visualização sobre a imagem de fundo*/
+}
+
+.main-banner h1{
+    font-size: 60px; /*Aumenta a fonte para ficar em um tamanho bom de título*/
+}
+
+.main-banner p {
+    font-size: 34px; /*Aumenta a fonte para ficar em um tamanho bom de parágrafo*/
+}
