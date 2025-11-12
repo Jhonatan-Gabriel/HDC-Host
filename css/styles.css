@@ -91,3 +91,47 @@ nav {
 .main-banner p {
     font-size: 34px; /*Aumenta a fonte para ficar em um tamanho bom de parágrafo*/
 }
+
+/* Services */
+.services-container {
+    padding: 5rem 0;
+}
+
+.services-container ul {
+    display: flex; /*Usa o Flexbox para organizar os itens lado a lado*/
+    width: 90%;
+    margin: 0 auto; /*centraliza a lista*/
+}
+
+.services-container li {
+    flex: 1 1 200px; /*Caso sobre espaço na lista, CRESÇA para ocupar; se faltar espaço, ENCOLHA/QUEBRE para desocupar; inicie com 200px*/
+    list-style: none; /*remove os marcadores padrão da lista*/
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+    /* aumenta os ícones todos e coloca um "respiro" entre eles e o título */
+}
+
+.fa-shield-alt {
+  color: #2cc76a;
+}
+
+.fa-rocket {
+  color: #ef3f29;
+}
+
+.fa-comments {
+  color: #ef8f29;
+}
+
+.services-container h3 {
+    margin-bottom: 25px;
+}
+
+.services-container p {
+    line-height: 25px;
+}
